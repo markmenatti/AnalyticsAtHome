@@ -1,0 +1,9 @@
+CREATE TABLE etl.box_score_capture_record
+(
+    game_bk varchar(50),
+	created_at timestamp
+)
+;
+
+ALTER TABLE IF EXISTS etl.box_score_capture_record
+    OWNER to postgres;

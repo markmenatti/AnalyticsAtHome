@@ -1,0 +1,13 @@
+CREATE TABLE etl.game_links
+(
+    link_url varchar(50),
+	calendar_year varchar(10),
+	team varchar(10),
+	is_regular smallint,
+	is_playoff smallint,
+	is_spring smallint
+)
+;
+
+ALTER TABLE IF EXISTS etl.game_links
+    OWNER to postgres;
